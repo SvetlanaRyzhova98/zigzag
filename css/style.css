@@ -35,6 +35,7 @@ input::placeholder {
   font-family: "Cera Pro", sans-serif;
   font-size: 15px;
 }
+
 /*-------------------------------------- Header------------------------------- */
 .header {
   padding: 20px 0;
@@ -476,7 +477,10 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 55px;
+  margin-top: 0;
+  padding-top: 0;
 }
+
 .social-item {
   display: flex;
   flex-direction: column;
@@ -490,7 +494,10 @@ h4 {
   font-size: 22px;
   letter-spacing: normal;
 }
-
+.social__top{
+  background-color: white;
+  padding-bottom: 40px;
+}
 .icon-item {
   width: 40px;
   height: 40px;
