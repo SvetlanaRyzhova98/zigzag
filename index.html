@@ -261,12 +261,16 @@
                   <label for="tel"
                     >Номер телефона <span class="red">*</span></label
                   >
-                  <input
+                  <div class="input-tel">
+                    <label for="tel" class="label-tel"
+                    ><img src="./img/flag.svg" alt=""> <span class="select-country">+7</span> </label
+                  >
+                  <input 
                     type="tel"
                     id="tel"
-                    name="user_tel"
-                    placeholder="(999) 999 99 99"
+                    name="user_tel"  placeholder="(999) 999 99 99"
                   />
+                  </div>
                 </div>
                 <div class="input">
                   <label for="requisites">Прикрепите реквизиты</label>
@@ -394,6 +398,21 @@
             />
           </div>
           <div class="input input-white">
+            <label for="tel--wh"
+              >Номер телефона <span class="red">*</span></label
+            >
+            <div class="input-tel">
+              <label for="tel--wh" class="label-tel"
+              ><img src="./img/flag.svg" alt=""> <span class="select-country">+7</span> </label
+            >
+            <input 
+              type="tel"
+              id="tel--wh"
+              name="user_tel"  placeholder="(999) 999 99 99"
+            />
+            </div>
+          </div>
+          <!-- <div class="input input-white">
             <label for="tel">Номер телефона <span class="red">*</span></label>
             <input
               type="tel"
@@ -401,7 +420,7 @@
               name="user_tel"
               placeholder="(999) 999 99 99"
             />
-          </div>
+          </div> -->
           <div class="input input-white">
             <label for="bin">Введите комментарий</label>
             <input

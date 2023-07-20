@@ -31,9 +31,9 @@ img {
 .red {
   color: #dc4949 !important;
 }
-input::placeholder{
+input::placeholder {
   font-family: "Cera Pro", sans-serif;
- font-size: 15px;
+  font-size: 15px;
 }
 /*-------------------------------------- Header------------------------------- */
 .header {
@@ -88,7 +88,6 @@ input::placeholder{
   position: relative;
   color: #181f20;
 }
-
 .btn.btn-login::before {
   content: "";
   position: absolute;
@@ -100,6 +99,28 @@ input::placeholder{
   border-radius: 8px;
   z-index: -1;
 }
+/* .btn.btn-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(35deg, #b5e210, #69a019);
+  border-radius: 8px;
+  z-index: -2;
+}
+button.btn.btn-login:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: white;
+  border-radius: 6px;
+  z-index: -1;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+} */
 
 /*-------------------------------------- Hiro------------------------------- */
 
@@ -256,7 +277,7 @@ figcaption {
   align-items: normal;
   background-position: right;
 }
-h3{
+h3 {
   font-size: 30px;
 }
 .lk h3 {
@@ -378,7 +399,7 @@ h3{
 .label-file {
   /* position: absolute; */
   background-color: #242e1f;
-
+  cursor: pointer;
   display: flex;
   padding: 17px;
   border-radius: 8px;
@@ -393,7 +414,30 @@ h3{
 .label-file img {
   max-width: 20px;
 }
+.input-tel {
+  position: relative;
+}
+.input-tel input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  padding: 18px 0!important;
+}
+.label-tel {
+  background: #272c2d;
+  width: 100%;
+  height: 55px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
+}
+.label-tel img {
+  max-width: 29px;
+  margin-left: 30px;
+}
 /* ------------------------------- */
 h4 {
   color: #ccf60e;
@@ -446,14 +490,11 @@ h4 {
   font-size: 22px;
   letter-spacing: normal;
 }
-.leaflet-popup .leaflet-zoom-animated {
-  opacity: 0 !important;
-}
 
 .icon-item {
   width: 40px;
   height: 40px;
-  border-radius: 500px;
+  border-radius: 100%;
   border: 1px solid #ececec;
   display: flex;
   justify-content: center;
@@ -498,6 +539,11 @@ h4 {
   color: black;
   letter-spacing: normal;
 }
+
+.input-white .label-tel {
+  background-color: #ffffff;
+}
+
 .btn--upper {
   text-transform: uppercase;
 }
@@ -546,20 +592,19 @@ footer {
 .btn--foot {
   min-width: 257px;
 }
-.address--foot p{
+.address--foot p {
   color: #aaaaaa;
-
 }
 .address--foot {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.copyright{
+.copyright {
   display: flex;
   justify-content: space-between;
   padding-bottom: 35px;
-  
 }
-.copyright img{
-  max-width: 55px};
+.copyright img {
+  max-width: 55px;
+}
